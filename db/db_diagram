@@ -1,8 +1,13 @@
+enum currency {
+    USD
+    EUR
+}
+
 Table accounts as A {
   id bigserial [pk]
   owner varchar [not null]
   balance bigint [not null]
-  currency Currency [not null]
+  currency currency [not null]
   created_at timestamptz [not null, default: `now()`]
 
   Indexes {
@@ -26,7 +31,7 @@ Table transfers {
   from_account_id bigint [ref: > A.id, not null]
   to_account_id bigint [ref: > A.id, not null]
   amount bigint [not null, note: 'must be positive']
-  currency Currency [not null]
+  currency currency [not null]
   created_at timestamptz [not null, default: `now()`]
 
   Indexes {
@@ -36,8 +41,4 @@ Table transfers {
   }
 }
 
-enum Currency {
-    USD
-    EUR
-}
 
