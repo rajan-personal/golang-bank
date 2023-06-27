@@ -8,6 +8,7 @@ require (
 	github.com/go-playground/validator/v10 v10.14.1 // indirect
 	github.com/klauspost/cpuid/v2 v2.2.5 // indirect
 	github.com/lib/pq v1.10.9
+	github.com/spf13/viper v1.16.0 // indirect
 	github.com/stretchr/testify v1.8.4
 	golang.org/x/net v0.11.0 // indirect
 	google.golang.org/protobuf v1.31.0 // indirect
