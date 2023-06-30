@@ -6,6 +6,7 @@ require (
 	github.com/bytedance/sonic v1.9.2 // indirect
 	github.com/gin-gonic/gin v1.9.1 // indirect
 	github.com/go-playground/validator/v10 v10.14.1 // indirect
+	github.com/golang/mock v1.6.0 // indirect
 	github.com/klauspost/cpuid/v2 v2.2.5 // indirect
 	github.com/lib/pq v1.10.9
 	github.com/spf13/viper v1.16.0 // indirect
